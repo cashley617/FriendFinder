@@ -5,7 +5,7 @@ var path = require('path');
 
 // Express app
 var app = express();
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 8080;
 
 // Connect to CSS 
 app.use(express.static(path.join(__dirname, './app/public')));
