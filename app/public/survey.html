@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friends</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper pink accent-2">
+                <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
+                <a href="/" class="brand-logo" id="logo">Friendzzzz</a>
+                <ul class="right hide-on-med-and-down" id="head-nav-links">
+                    <li><a href="/survey">Survey</a></li>
+                    <li><a href="/api/friends">API Friends List</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 z-depth-5 mainpanel">
+                    <div id="mainpanel-content">
+                        <h1>Questions</h1>
+                        <div class="divider"></div>
+
+                        <h3>About You</h3>
+
+                        <div class="input-field col s6">
+                            <h5>Name</h5>
+                            <i class="material-icons prefix">Name</i>
+                            <input type="text" class="validate" placeholder="Enter Your Name" id="userName">
+                        </div>
+
+                        <div class="input-field col s6">
+                            <h5>Link to your pic</h5>
+                            <i class="material-icons prefix">Picture</i>
+                            <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+                        </div>
+
+                        <!-- Survey Questions -->
+                        <div class="input-field col s12">
+                            <h3>1</h3>
+                            <h5>You have a kill list</h5>
+                            <select id="question1">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>2</h3>
+                            <h5>You're cheating on your husband with your brother</h5>
+                            <select id="question2">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>3</h3>
+                            <h5>You went to a wedding you had a bad feeling about</h5>
+                            <select id="question3">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>4</h3>
+                            <h5>You lead a rebellion to become Queen of the North</h5>
+                            <select id="question4">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>5</h3>
+                            <h5>You fall in love with a traitor</h5>
+                            <select id="question5">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>6</h3>
+                            <h5>You kill a child</h5>
+                            <select id="question6">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>7</h3>
+                            <h5>You are senselessly beheaded by shitting writing</h5>
+                            <select id="question7">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>8</h3>
+                            <h5>You are crushed by a giant, all because of shitting writing</h5>
+                            <select id="question8">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>9</h3>
+                            <h5>You give your virginity to a man who leaves you for his sister</h5>
+                            <select id="question9">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>10</h3>
+                            <h5>You feel betrayed by an entire show</h5>
+                            <select id="question10">
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <!-- Survey Submit Button -->
+                        <div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action"
+                                id="submitButton">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Closest Match -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Closest Friend Match</h4>
+            <div class="divider"></div>
+            <h5 id="userMatch"></h5>
+            <img id="userMatchImage" class="materialboxed" width="650" src="">
+        </div>
+        <div class="modal-footer">
+            <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').material_select();
+            $('.modal').modal({
+                dismissible: false, // Modal can be dismissed by clicking outside of the modal
+                opacity: .5, // Opacity of modal background
+                inDuration: 300, // Transition in duration
+                outDuration: 200, // Transition out duration
+                startingTop: '4%', // Starting top style attribute
+                endingTop: '10%' // Ending top style attribute
+            });
+        });
+        // Activate submit button
+        $('#submitButton').on('click', function (event) {
+            event.preventDefault();
+            // Gather user inputs
+            var userInput = {
+                name: $('#userName').val().trim(),
+                photo: $('#userPhoto').val().trim(),
+                scores: [
+                    $('#question1').val().trim(),
+                    $('#question2').val().trim(),
+                    $('#question3').val().trim(),
+                    $('#question4').val().trim(),
+                    $('#question5').val().trim(),
+                    $('#question6').val().trim(),
+                    $('#question7').val().trim(),
+                    $('#question8').val().trim(),
+                    $('#question9').val().trim(),
+                    $('#question10').val().trim()
+                ]
+            };
+            // Add user inputs to friends list
+            $.post('/api/friends', userInput)
+                .done(function (data) {
+                    // Set the name and image values of friend match
+                    $('#userMatch').html(data.matchName);
+                    $("#userMatchImage").attr("src", data.matchImage);
+                    // Pop open the modal dialog
+                    $('#modal1').modal('open');
+                });
+        });
+    </script>
+</body>
